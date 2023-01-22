@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.BookAppointment"
+    android:background="@drawable/hms2">
+
+    <TextView
+        android:id="@+id/signup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:text="Book Appointment"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup1"
+        android:hint="Doctor Name"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        />
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name1"
+        android:hint="Address"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        />
+
+    <EditText
+        android:id="@+id/newpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email1"
+        android:hint="Contact Number"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        />
+
+    <EditText
+        android:id="@+id/confirmpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newpassword1"
+        android:hint="Fees"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_currency_rupee_24"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button111"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:text="book appointment"
+        android:textSize="20dp"
+        app:backgroundTint="#3F51B5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmpassword1"
+        android:layout_margin="25dp"
+
+        android:text="Select Date : "
+        android:textColor="#009688"
+        android:textSize="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button11"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="460dp"
+        android:text="17/01/2023"
+        android:textColor="#009688"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_below="@id/textView"
+        android:layout_margin="25dp"
+        android:text="Select Time : "
+        android:textColor="#009688"
+        android:textSize="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button111"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview"
+        android:layout_marginTop="535dp"
+        android:text="10:00 A.M."
+        android:textColor="#009688"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
